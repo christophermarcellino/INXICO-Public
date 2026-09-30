@@ -11,7 +11,7 @@ Public website and data-only OTA hosting for INXICO.
 - OTA information: https://christophermarcellino.github.io/INXICO-Public/ota/
 
 Publisher: Christopher Marcellino Tejosantoso  
-Contact: finatorapp@gmail.com
+Contact: inxicoapp@gmail.com
 
 ## OTA security
 
