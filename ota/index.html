@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark"><title>OTA Resources — INXICO</title>
+<link rel="stylesheet" href="https://christophermarcellino.github.io/INXICO-Public/assets/style.css"></head><body>
+<header><div class="nav"><a class="brand" href="https://christophermarcellino.github.io/INXICO-Public/">INXICO</a><nav>
+<a href="https://christophermarcellino.github.io/INXICO-Public/privacy/">Privacy</a><a href="https://christophermarcellino.github.io/INXICO-Public/terms/">Terms</a><a href="https://christophermarcellino.github.io/INXICO-Public/support/">Support</a>
+</nav></div></header><main>
+<div class="eyebrow">Public update service</div><h1>INXICO OTA resources</h1>
+<p>This repository hosts INXICO's public <strong>data-only</strong> over-the-air resource channel.</p>
+<div class="notice"><strong>No native application code is distributed here.</strong> Swift/Kotlin/Java binaries, dynamic libraries, scripts, bytecode and executable plugins are outside the OTA contract and must ship through normal app distribution.</div>
+<h2>Allowed resource classes</h2>
+<ul><li>prompts;</li><li>JSON configuration;</li><li>non-executable assets;</li><li>signed model-catalog metadata that feeds INXICO's separate model-trust pipeline.</li></ul>
+<h2>Integrity model</h2>
+<p>Production manifests are designed to be signed with Ed25519. Resource bytes are pinned by SHA-256 and activated only after verification. The private signing key must never be published in this repository.</p>
+<p>Production feed path: <code>https://christophermarcellino.github.io/INXICO-Public/ota/v1/manifest.json</code></p>
+<p class="muted">The production manifest is intentionally absent until a production signing key and first signed release are prepared.</p>
+</main><footer><div class="footer">
+<div><strong>Publisher:</strong> Christopher Marcellino Tejosantoso</div>
+<div><strong>Email:</strong> <a href="mailto:finatorapp@gmail.com">finatorapp@gmail.com</a></div>
+<div class="meta"><span>© 2026 Christopher Marcellino Tejosantoso</span><span>INXICO public information site</span></div>
+</div></footer></body></html>
