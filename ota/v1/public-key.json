@@ -1,0 +1,7 @@
+{
+  "algorithm": "Ed25519",
+  "key_id": "inxico-ota-prod-2026-09-30-01",
+  "public_key_b64": "WV92O5F+mlW96yZm1ZpMMPp8XdS68LrUtTyRVrcFlkI=",
+  "schema_version": 1,
+  "sha256": "fe0170173237c87a32ba5f7b219be23d44fde92e51b94d8d98bf98fbdf75a0e7"
+}
