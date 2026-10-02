@@ -5,24 +5,30 @@
 <header><div class="nav"><a class="brand" href="https://christophermarcellino.github.io/INXICO-Public/">INXICO</a><nav>
 <a href="https://christophermarcellino.github.io/INXICO-Public/privacy/">Privacy</a><a href="https://christophermarcellino.github.io/INXICO-Public/terms/">Terms</a><a href="https://christophermarcellino.github.io/INXICO-Public/support/">Support</a>
 </nav></div></header><main>
-<div class="eyebrow">Last updated September 30, 2026</div><h1>Privacy Policy</h1>
+<div class="eyebrow">Last updated October 2, 2026</div><h1>Privacy Policy</h1>
 <p>This Privacy Policy explains how INXICO handles information when you use the app and related public services.</p>
 
 <h2>1. Local-first workspace</h2>
 <p>INXICO is designed so that chats, projects, imported files and local workspace content are stored on your device by default. INXICO does not use Supabase as general cloud storage for your private workspace content.</p>
-<p>Information leaves your device only when needed for a feature you choose, such as authentication, purchases, connected apps, web or hosted tools, encrypted share links, or public resource updates.</p>
+<p>Local workspace storage includes conversations, projects, imported files, evidence, memory and downloaded local models. Local import, OCR and supported on-device speech recognition process content on your device. Using local storage does not prevent account, billing or SDK operational data from being transmitted as described below.</p>
+<p>Optional external features can send information off your device when you select and authorize them. Account authentication, purchase verification, public resource/model downloads and third-party SDK operational metrics also require network processing.</p>
 
 <h2>2. Account and entitlement information</h2>
 <p>INXICO uses Supabase for account authentication and server-side account state. Depending on the sign-in method you choose, account information may include:</p>
-<ul><li>your account identifier and sign-in provider;</li><li>email address or provider identity information needed for authentication;</li><li>trial and entitlement state;</li><li>security, account-linking and deletion records needed to prevent account or trial abuse.</li></ul>
+<ul><li>your account identifier and sign-in provider;</li><li>email address, profile name where supplied by your sign-in provider, provider identity, and session information needed for authentication;</li><li>trial and entitlement state;</li><li>security, account-linking and deletion records needed to prevent account or trial abuse.</li></ul>
+<p>Normal users create and access an INXICO account with Apple or Google. Email/password authentication is restricted to administrator-created store-reviewer accounts; public email/password registration is disabled.</p>
 <p>Apple, Google and Supabase may separately process information under their own privacy policies when you use their services.</p>
 
 <h2>3. Purchases and entitlement verification</h2>
-<p>Purchases are processed by the applicable app store. INXICO uses RevenueCat and its backend services to verify and synchronize purchase entitlement status. INXICO does not receive your full payment-card details from the app store.</p>
+<p>Purchases are processed by the applicable app store. INXICO supplies its account identifier to RevenueCat. RevenueCat and INXICO's backend process purchase, transaction, product and entitlement information for verification, restore, reconciliation and purchase analytics. INXICO does not receive your full payment-card details from the app store.</p>
+<h3>Optional external AI and hosted tools</h3>
+<p>If you choose an external AI route, INXICO sends the prompt and the conversation/context or selected file excerpts authorized for that request to your selected provider: OpenAI, Anthropic, Google Gemini or a custom compatible HTTPS endpoint. Web search sends the selected query. Hosted image generation sends the prompt; external image editing also sends the source image after explicit approval. Scheduled AI can use the previously authorized route and scope. These features do not enable general cloud workspace synchronization.</p>
+<p>External providers process the content and normal request metadata under their own policies. INXICO does not guarantee that an external provider processes data only in memory or deletes it when local content is deleted. Review the chosen provider's retention and use terms before authorizing a request.</p>
 
 <h2>4. Connected apps and external actions</h2>
 <p>If you connect a third-party service, INXICO processes only the information needed for the permissions and actions you authorize. Connected services can include Google Workspace and other supported providers. Provider permissions are capability-scoped, and remote mutations require the app's applicable approval flow.</p>
-<p>Data sent to a connected provider is also subject to that provider's terms and privacy policy.</p>
+<p>The initial native connector surface includes Google Drive, Docs, Sheets, Slides, Calendar, Gmail sending and Meet information. Authorized operations can transfer selected document content and metadata, calendar events, email recipients and message content. Remote HTTPS MCP and user-configured REST/webhook endpoints receive the specific resource, prompt, query, tool arguments or request content approved for them. Other native providers present in the source are hidden from the initial launch surface.</p>
+<p>Data sent to a connected provider is also subject to that provider's terms and privacy policy. Disconnecting a provider does not undo completed remote actions.</p>
 
 <h2>5. Share links</h2>
 <p>When you deliberately create a hosted share link, INXICO may upload an encrypted share package and limited metadata required to operate that link. The hosted service is designed not to store the share package's decryption key. Anyone who has the complete share link may be able to access the shared material according to the link's design and state.</p>
@@ -30,12 +36,16 @@
 <h2>6. Public OTA resource updates</h2>
 <p>INXICO may contact this public site to obtain signed data-only resource updates such as prompts, JSON configuration, non-executable assets and model-catalog metadata. Native application code is not delivered through this OTA channel. Normal network metadata, such as IP address and request information, may be processed by the hosting provider when these public files are requested.</p>
 
+<h3>Third-party SDK operational data</h3>
+<p>Google ML Kit is used for bundled OCR and supported on-device AI. Although those features process their inputs and outputs locally, ML Kit sends operational data to Google, including device/app information, installation identifiers, feature/configuration events, performance measurements and error information, for diagnostics and usage analytics. Its on-device generative AI APIs may also collect user/device identifiers. INXICO has no separate analytics or crash-reporting service configured in the audited application; this does not mean that SDK metrics are absent.</p>
+<p>SDK and service processing is subject to the providers' policies, including <a href="https://developers.google.com/ml-kit/terms">ML Kit terms</a> and <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit data disclosure</a>. INXICO does not display ads or invoke RevenueCat's advertising-identifier collection APIs.</p>
 <h2>7. Support communications</h2>
 <p>If you contact support, the publisher receives the information you choose to include in your message. Do not send passwords, private keys, access tokens or other secrets.</p>
 
 <h2>8. Retention</h2>
 <p>Local workspace data remains on your device until you delete it, clear app storage, remove it through supported app controls, or uninstall the app, subject to your device backup settings. Server-side account and service records are retained only as needed to provide the relevant service, maintain security and entitlement integrity, satisfy legal obligations, or complete deletion workflows.</p>
 
+<p>After account deletion, INXICO retains keyed, non-plaintext fingerprints of supported authentication identities for three years to prevent repeat-trial abuse. Raw emails, provider identity values and workspace content are not stored in those fingerprints. A minimum billing customer reference remains in the deletion queue until RevenueCat confirms absence; de-identified billing-event metadata may remain for reconciliation and security. Independent stores and external providers control their own required retention.</p>
 <h2>9. Account and data deletion</h2>
 <p>You can review the instructions at <a href="https://christophermarcellino.github.io/INXICO-Public/delete-account/">Delete Account</a> and <a href="https://christophermarcellino.github.io/INXICO-Public/delete-data/">Delete Data</a>. Account deletion and local-device data deletion are separate operations because INXICO is local-first.</p>
 
